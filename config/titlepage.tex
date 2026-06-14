@@ -2,30 +2,28 @@
 
 \begin{titlepage}
     \begin{center}
-      \makeatletter 
+        \makeatletter 
         \begin{figure}[!htb]
-          \centering
-          
-          \ifx\@secondlogo\none
-            \begin{minipage}{0.42\textwidth}
-            \centering       
-            \includegraphics[width=\linewidth]{\@logo}
+            \centering
+
+            \begin{minipage}{0.30\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{\@logo}
             \end{minipage}
-          \else
-            \begin{minipage}{0.42\textwidth}
-            \centering       
-            \includegraphics[width=\linewidth]{\@logo}
+            \hfill
+            \begin{minipage}{0.30\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{\@secondlogo}
             \end{minipage}
-            \hspace{1cm}
-            \begin{minipage}{0.42\textwidth}
-            \centering       
-            \includegraphics[width=\linewidth]{\@secondlogo}
+            \hfill
+            \begin{minipage}{0.30\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{\@thirdlogo}
             \end{minipage}
-          \fi
 
         \end{figure}
-      \makeatother
-      \vspace*{0.25cm}
+        \makeatother
+        \vspace*{0.25cm}
 
         \maketitle
 
@@ -35,7 +33,7 @@
         \makeatletter
         \textbf{\@keywords}
         \makeatother
-        
+
         \vspace*{\fill}
         \normalsize
         Conducted under the supervision of: \\
@@ -43,14 +41,14 @@
         \centering
         \makeatletter
         \begin{tabular}{l c r}
-        \ifx\@firstsupervisor\none  \else \hspace{0.5cm}  \@firstsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@firstsupervisorrole \\ \fi 
-        \ifx\@secondsupervisor\none \else \hspace{0.5cm}  \@secondsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@secondsupervisorrole \\ \fi
-        \ifx\@thirdsupervisor\none \else \hspace{0.5cm}  \@thirdsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@thirdsupervisorrole \\ \fi 
-        \ifx\@fourthsupervisor\none \else \hspace{0.5cm}  \@fourthsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@fourthsupervisorrole \\ \fi 
-        \ifx\@fifthsupervisor\none \else \hspace{0.5cm}  \@fifthsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@fifthsupervisorrole \\ \fi 
+            \ifx\@firstsupervisor\none  \else \hspace{0.5cm}  \@firstsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@firstsupervisorrole \\ \fi 
+            \ifx\@secondsupervisor\none \else \hspace{0.5cm}  \@secondsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@secondsupervisorrole \\ \fi
+            \ifx\@thirdsupervisor\none \else \hspace{0.5cm}  \@thirdsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@thirdsupervisorrole \\ \fi 
+            \ifx\@fourthsupervisor\none \else \hspace{0.5cm}  \@fourthsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@fourthsupervisorrole \\ \fi 
+            \ifx\@fifthsupervisor\none \else \hspace{0.5cm}  \@fifthsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@fifthsupervisorrole \\ \fi 
         \end{tabular}
         \makeatother
-        
+
     \end{center}
 \end{titlepage}
 

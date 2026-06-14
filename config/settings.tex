@@ -33,8 +33,8 @@
 
 % maths theorem fields and derivates
 \declaretheoremstyle[
-  headfont=\color{mpblue}\normalfont\bfseries,
-  bodyfont=\color{black}\normalfont\itshape,
+headfont=\color{mpblue}\normalfont\bfseries,
+bodyfont=\color{black}\normalfont\itshape,
 ]{colored}
 
 \theoremstyle{colored}
@@ -71,6 +71,11 @@
 \makeatletter
 \newcommand\secondlogo[1]{\renewcommand\@secondlogo{#1}}
 \newcommand\@secondlogo{None}
+\makeatother
+
+\makeatletter
+\newcommand\thirdlogo[1]{\renewcommand\@thirdlogo{#1}}
+\newcommand\@thirdlogo{None}
 \makeatother
 
 \newcommand\none{None}
@@ -135,13 +140,13 @@
     {\vspace*{2.8cm}}
     {\centering}
     {\LARGE{\textbf{\@title}}}
-    
+
     {\vspace*{0.25cm}}
     {\large {\textbf{\@subtitle}}}
-    
+
     {\vspace{3cm}}
     {\large{\textbf{Author: \@author}}}
-    
+
     {\vspace{2cm}}
     {\large{\textbf{\@date}}}
 }

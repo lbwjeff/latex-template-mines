@@ -12,6 +12,7 @@
 *.toc
 *.lof
 *.lot
+*.pdf
 
 # Latexmk
 latexmkrc
