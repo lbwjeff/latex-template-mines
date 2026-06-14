@@ -1,5 +1,3 @@
-
-
 \begin{titlepage}
     \begin{center}
         \makeatletter 
@@ -35,19 +33,28 @@
         \makeatother
 
         \vspace*{\fill}
-        \normalsize
-        Conducted under the supervision of: \\
-        \vspace{0.5cm}
-        \centering
-        \makeatletter
-        \begin{tabular}{l c r}
-            \ifx\@firstsupervisor\none  \else \hspace{0.5cm}  \@firstsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@firstsupervisorrole \\ \fi 
-            \ifx\@secondsupervisor\none \else \hspace{0.5cm}  \@secondsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@secondsupervisorrole \\ \fi
-            \ifx\@thirdsupervisor\none \else \hspace{0.5cm}  \@thirdsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@thirdsupervisorrole \\ \fi 
-            \ifx\@fourthsupervisor\none \else \hspace{0.5cm}  \@fourthsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@fourthsupervisorrole \\ \fi 
-            \ifx\@fifthsupervisor\none \else \hspace{0.5cm}  \@fifthsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@fifthsupervisorrole \\ \fi 
-        \end{tabular}
-        \makeatother
+
+        \begin{flushright}
+            \begin{minipage}{0.55\textwidth}
+                \raggedleft
+                \normalsize
+
+                \textbf{Conducted under the supervision of:}
+
+                \vspace{0.5cm}
+
+                \makeatletter
+                \begin{tabular}{l c l}
+                    \ifx\@firstsupervisor\none  \else \@firstsupervisor  & -- & \@firstsupervisorrole  \\ \fi
+                    \ifx\@secondsupervisor\none \else \@secondsupervisor & -- & \@secondsupervisorrole \\ \fi
+                    \ifx\@thirdsupervisor\none  \else \@thirdsupervisor  & -- & \@thirdsupervisorrole  \\ \fi
+                    \ifx\@fourthsupervisor\none \else \@fourthsupervisor & -- & \@fourthsupervisorrole \\ \fi
+                    \ifx\@fifthsupervisor\none  \else \@fifthsupervisor  & -- & \@fifthsupervisorrole  \\ \fi
+                \end{tabular}
+                \makeatother
+
+            \end{minipage}
+        \end{flushright}
 
     \end{center}
 \end{titlepage}
